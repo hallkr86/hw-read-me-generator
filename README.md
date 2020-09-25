@@ -1,25 +1,31 @@
-"#title"
+"#ReadMe Generator"
 
  ##Description
- thishoiergeoighaer;gh
+ This project generates a standard readme.
+
+ ##Table of Contents
+ Installation, usage, license, contributing, tests, and questions.
 
  ##Installation
- aogijaeroigha;eorihg
+ Used the package npm to install file system and inquirer.
 
  ##Usage
- aeoigehaoirhgoairhg
+ The user can create a easy readme file.
 
  ##License
- oirgoaierhgoerihg
+ MIT (https://choosealicense.com/license/mit/)
 
  ##Contributing
- oaeirhgoeigheorihg
+ Pull request are welcomed. Let me know what you would like to change.
 
  ##Tests
- oierhgoierjgoeirhg
+ The tests included making sure the titles appeared
 
  ##Questions
- oierhgoiehrgo;ierhg
+ For any questions, reach out to me at hallkr86@github.com
 
- ##Github URL
- ergjakhgaeoigh
+ ##Github
+ hallkr86
+
+ ##Email
+ undefined

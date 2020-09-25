@@ -1,6 +1,7 @@
 //console.log("hello world");
 const inquirer = require("inquirer");
 const fs = require("fs");
+//const markdownGenerator = require("./utils.js/generateMarkdown");
 
 
 inquirer
@@ -49,6 +50,16 @@ inquirer
             type: "input",
             message: "Please enter your questions",
             name: "questions"
+        },
+        {
+        type: "input",
+        message: "Please enter your Github Username",
+        name: "username"
+        },
+        {
+        type: "input",
+        message: "Please enter your email",
+        name: "email"
         }
         
 
@@ -63,6 +74,7 @@ inquirer
             if (err) throw err;
             console.log('Saved README.md!');
         });
+        //let generateMD = markdownGenerator (data);
         fs.appendFile('README.md', `\n\n ##Table of Contents\n ${data.contents}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
@@ -88,6 +100,14 @@ inquirer
             console.log('Saved README.md!');
         });
         fs.appendFile('README.md', `\n\n ##Questions\n ${data.questions}`, function (err) {
+            if (err) throw err;
+            console.log('Saved README.md!');
+        });
+        fs.appendFile('README.md', `\n\n ##Github\n ${data.username}`, function (err) {
+            if (err) throw err;
+            console.log('Saved README.md!');
+        });
+        fs.appendFile('README.md', `\n\n ##Email\n ${data.Email}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
