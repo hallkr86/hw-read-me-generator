@@ -18,10 +18,6 @@ In order to complete this assignment, I used the npm package to install file sys
 ## Usage
 The user can generate a README.md by responding to prompts on the command line.
 
-
-
-
-
 ## Links
 
 ## Credit
