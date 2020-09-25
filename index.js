@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+
 inquirer
     .prompt([
         {
@@ -16,7 +17,7 @@ inquirer
         },
         {
             type: "input",
-            message: "Please add the table of contents",
+            message: "Please enter your table of contents",
             name: "contents"
         },
         {
@@ -49,42 +50,46 @@ inquirer
             message: "Please enter your questions",
             name: "questions"
         }
+        
+
+
     ]).then(function(data){
         console.log(data);
-        fs.writeFile('README.md', JSON.stringify(data.title), function (err) {
+        fs.writeFile('README.md', JSON.stringify (data.title), function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.description}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Description\n ${data.description}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.contents}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Table of Contents\n ${data.contents}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.installation}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Installation\n ${data.installation}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.usage}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Usage\n ${data.usage}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.license}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##License\n ${data.license}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.contributing}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Contributing\n ${data.contributing}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.tests}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Tests\n ${data.tests}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-        fs.appendFile('README.md', `\n\n${data.questions}`, function (err) {
+        fs.appendFile('README.md', `\n\n ##Questions\n ${data.questions}`, function (err) {
             if (err) throw err;
             console.log('Saved README.md!');
         });
-    })
+        
+    });
