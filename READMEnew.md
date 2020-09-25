@@ -21,8 +21,9 @@ The user can generate a README.md by responding to prompts on the command line.
 ## Links
 
 ## Credit
-https://node.js.org
-https://npmjs.com
+    https://node.js.org
+
+    https://npmjs.com
 
 
 
