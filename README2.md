@@ -9,7 +9,6 @@ This assignment was designed to provide a quick way for users to generate a stan
 
     - Installation
     - Usage
-    - Visual Preview
     - Links
     - Credit
 
@@ -19,7 +18,7 @@ In order to complete this assignment, I used the npm package to install file sys
 ## Usage
 The user can generate a README.md by responding to prompts on the command line.
 
-## Visual
+
 
 
 
